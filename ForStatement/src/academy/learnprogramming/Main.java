@@ -99,6 +99,8 @@ public class Main {
         }
 
         for (int i = 2; i <= num / 2; i++) {
+            // or write above like this:
+//      git for (int i = 2; i <= (long) Math.sqrt(num); i++) {
             // this for loop will only look for numbers that are divisible by 2
             if (num % i == 0) {
                 // this is checking if the remainder of num and i == 0 if it does it will return false
