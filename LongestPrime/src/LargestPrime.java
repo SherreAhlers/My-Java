@@ -12,16 +12,17 @@
 
 
 public class LargestPrime {
-    public static int getLargestPrime (int number) {
-        int prime = (number) % 10;
-        if(number <= 1) {
-            return -1;
-        } else if (number % 10 == 0) {
-            return number;
-        } else {
-            return -1;
-        }
-        }
+    // MY VERSION _ INCORRECT
+//    public static int getLargestPrime (int number) {
+//        int prime = (number) % 10;
+//        if(number <= 1) {
+//            return -1;
+//        } else if (number % 10 == 0) {
+//            return number;
+//        } else {
+//            return -1;
+//        }
+//        }
 
         // CORRECT VERSION:
         public static int getLargestPrime(int number){
@@ -38,23 +39,23 @@ public class LargestPrime {
         }
 
         // OR LIKE THIS:
-        public static int getLargestPrime(int number){
-            if(number<=1){
-                return -1;
-            }
-            int k,g=0;
-            for(int i=2;i<=number;i++){
-                k=0;
-                if(number%i==0) {
-                    for (int j = 2; j < i; j++) {
-                        if (i % j == 0)
-                            k = 1;
-                    }
-                    if (k == 0 && i > g)
-                        g = i;
-                }
-            }
-            return g;
-        }
+//        public static int getLargestPrime(int number){
+//            if(number<=1){
+//                return -1;
+//            }
+//            int k,g=0;
+//            for(int i=2;i<=number;i++){
+//                k=0;
+//                if(number%i==0) {
+//                    for (int j = 2; j < i; j++) {
+//                        if (i % j == 0)
+//                            k = 1;
+//                    }
+//                    if (k == 0 && i > g)
+//                        g = i;
+//                }
+//            }
+//            return g;
+//        }
     }
 
