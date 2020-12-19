@@ -17,16 +17,25 @@ public class BankAccount {
         // can have more than one constructor as long as change number of parameters
     }
     public BankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
-        System.out.println("BankAccount construcor with parameters called.");
+        System.out.println("BankAccount constructor with parameters called.");
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
         // the above sets the field values inside the constructor.
-
-
     }
+    // can add constructors with intelliJ
+    // click code at top - click generate - select constructor - will ask which fields to use.
+
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this("99999", 100.55, customerName, email, phoneNumber);
+    }
+//        this.customerName = customerName;
+//        this.email = email;
+//        this.phoneNumber = phoneNumber;
+    // the above is not needed because I set the defaults above as parameters.
 
     public void depositFunds(double depositAmount) {
 //        int deposits = balance + depositFunds();

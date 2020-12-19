@@ -1,5 +1,7 @@
 package academy.learnprogramming;
 
+import javax.swing.text.View;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,6 +55,22 @@ public class Main {
         // this will output: Deposit of 51.0 made. New balance is 101.0
         bobsAccount.withdrawFunds(100.00);
         // this will output: Withdrawal of 100.0 processed. Remaining balance 1.0
+
+        BankAccount timsAccount = new BankAccount("Tim", "tim@email.com", "12345");
+        System.out.println(timsAccount.getAccountNumber() + " name " + timsAccount.getCustomerName());
+        // this will output: 99999 name Tim
+
+        VipCustomer person1 = new VipCustomer();
+        System.out.println(person1.getName());
+        // this will output: Default name
+
+        VipCustomer person2 = new VipCustomer("Bob", 25000.00);
+        System.out.println(person2.getName());
+        // this will output: Bob
+
+        VipCustomer person3 = new VipCustomer("Cam", 100.00, "cb2477@gmail.com");
+        System.out.println(person3.getName());
+        // this will output: Cam
     }
 
 }
