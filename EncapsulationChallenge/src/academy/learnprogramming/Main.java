@@ -32,19 +32,19 @@ public class Main {
         // Pages printed was 1 new total print count for printer = 3
 
 
-        Printer printer = new Printer(50, false);
-        System.out.println("Initial page count = " + printer.getPagesPrinted());
-        // this will output: Initial page count = 0
-        int pagesPrinted = printer.printPages(4);
-        System.out.println("Pages printed was " + pagesPrinted + " " +
-                "new total print count for printer = " + printer.getPagesPrinted());
-        // this will output:
-        // Pages printed was 4 new total print count for printer = 4
-        pagesPrinted = printer.printPages(2);
-        System.out.println("Pages printed was " + pagesPrinted + " " +
-                "new total print count for printer = " + printer.getPagesPrinted());
-        // this will output:
-        // Pages printed was 2 new total print count for printer = 6
+//        Printer printer = new Printer(50, false);
+//        System.out.println("Initial page count = " + printer.getPagesPrinted());
+//        // this will output: Initial page count = 0
+//        int pagesPrinted = printer.printPages(4);
+//        System.out.println("Pages printed was " + pagesPrinted + " " +
+//                "new total print count for printer = " + printer.getPagesPrinted());
+//        // this will output:
+//        // Pages printed was 4 new total print count for printer = 4
+//        pagesPrinted = printer.printPages(2);
+//        System.out.println("Pages printed was " + pagesPrinted + " " +
+//                "new total print count for printer = " + printer.getPagesPrinted());
+//        // this will output:
+//        // Pages printed was 2 new total print count for printer = 6
 
     }
 }
