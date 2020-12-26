@@ -25,7 +25,10 @@ public class Main {
     // song from a playlist
     // HINT:
     // listIterator.remove();
-    private static ArrayList<Album> albums = new ArrayList<Album>();
+
+//    private static List<Album> albums = new ArrayList<>();
+    // to use Interface with this write the below like above:
+    private static ArrayList<Album> albums = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -53,6 +56,8 @@ public class Main {
         album.addSong("Night of the long knives", 5.12);
         albums.add(album);
 
+//        List<Song> playlist = new LinkedList<>();
+        // to use Interface with this write the below like above:
         LinkedList<Song> playlist = new LinkedList<>();
         albums.get(0).addToPlayList("You can't do it right", playlist);
         // this will output: Now playing You can't do it right: 6.23 -- because we
@@ -70,12 +75,14 @@ public class Main {
         play(playlist);
 
     }
-    private static void play(LinkedList<Song> playlist) {
+//    private static void play(List<Song> playlist) {
+        // to use Interface with this write the below like above:
+    public static void play(LinkedList<Song> playList) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
-        ListIterator<Song> listIterator = playlist.listIterator();
-        if(playlist.size() == 0) {
+        ListIterator<Song> listIterator = playList.listIterator();
+        if(playList.size() == 0) {
             System.out.println("No songs in playlist.");
             return;
         } else {
@@ -134,13 +141,13 @@ public class Main {
                     }
                     break;
                 case 4:
-                    printList(playlist);
+                    printList(playList);
                     break;
                 case 5:
                     printMenu();
                     break;
                 case 6:
-                    if(playlist.size() > 0) {
+                    if(playList.size() > 0) {
                         listIterator.remove();
                         if(listIterator.hasNext()) {
                             System.out.println("Now playing " + listIterator.next());
@@ -164,7 +171,9 @@ public class Main {
                 "6 - remove a song from list.");
     }
 
-    private static void printList(LinkedList<Song> playlist) {
+//    private static void printList(List<Song> playlist) {
+        // to use Interface with this write the below like above:
+    public static void printList(LinkedList<Song> playlist) {
         Iterator<Song> iterator = playlist.iterator();
         System.out.println("========================");
         while(iterator.hasNext()) {

@@ -2,6 +2,7 @@ package academy.learnprogramming;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Album {
     private String name;
@@ -28,6 +29,9 @@ public class Album {
         }
         return null;
     }
+
+//     public boolean addToPlayList(int trackNumber, List<Song> playList) {
+    // to use Interface with this write the below like above:
     public boolean addToPlayList(int trackNumber, LinkedList<Song> playList) {
         int index = trackNumber -1;
         if((index >= 0) && (index <= this.songs.size())) {
@@ -37,6 +41,8 @@ public class Album {
         System.out.println("This album does not have a track " + trackNumber);
         return false;
     }
+//    public boolean addToPlayList(String title, List<Song> playList) {
+        // to use Interface write below code like above:
     public boolean addToPlayList(String title, LinkedList<Song> playList) {
         Song checkedSong = findSong(title);
         if(checkedSong != null) {
