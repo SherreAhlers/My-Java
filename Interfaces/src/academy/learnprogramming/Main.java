@@ -20,6 +20,8 @@ public class Main {
         sherresPhone.callPhone(24565);
         sherresPhone.answer();
 
-
+// a class can only inherit from one super class
+        // but can implement from many interfaces
+        // multiple inheritance is only available with interfaces
     }
 }
