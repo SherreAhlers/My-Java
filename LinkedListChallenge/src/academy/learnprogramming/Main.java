@@ -182,3 +182,11 @@ public class Main {
         System.out.println("======================");
     }
 }
+
+// CHALLENGE
+// Modify the playlist challenge that the Album class uses an inner class.
+// Instead of using an ArrayList to hold its tracks, it will use an inner class called
+// SongList.
+// It will also provide findSong()  methods which will be used to by the Album class
+// to add songs to the playlist.
+// Neither the Song class or the Main class should be changed.
